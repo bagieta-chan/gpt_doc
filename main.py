@@ -25,6 +25,7 @@ from langchain.prompts import (
 )
 from langchain.schema.output_parser import StrOutputParser
 from pinecone import Pinecone, ServerlessSpec
+
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
 from langchain_core.chat_history import BaseChatMessageHistory
@@ -94,12 +95,12 @@ class App:
 
 
 print("Input your openAI key: ")
-OPENAI_API_KEY = "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"
-os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
+
+#os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 
 print("\nPINEAPI_KEY")
-PINECONE_API_KEY = "4ffc7ce2-c8a7-43b4-b74c-6a0e0b9666fd"
-os.environ['PINECONE_API_KEY'] = PINECONE_API_KEY
+
+#os.environ['PINECONE_API_KEY'] = PINECONE_API_KEY
 
 index_name = "project1"
 try:
